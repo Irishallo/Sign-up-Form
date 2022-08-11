@@ -55,14 +55,41 @@ table {
     align-items: stretch;
     height: 100vh;
     justify-content: center;
+    background-color: rgb(34, 34, 34);
 }
 
 #imageside {
     flex-basis: 20%;
-    background-color: antiquewhite;
+    background-image: url("usman-omar-ho7e8JYEo3w-unsplash.jpg");
+    background-size: cover;
 }
 
 #formside {
     flex-basis: 40%;
     background-color: coral;
+}
+
+#creditsdiv {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    font-size: 10px;
+    margin: auto;
+    width: fit-content;
+}
+
+#creditsdiv > p > a {
+    color: aliceblue;
+}
+
+#logo {
+    font-size: 50px;
+    background-color: rgba(34, 34, 34, 0.678);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    width: inherit;
 }

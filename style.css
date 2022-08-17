@@ -62,11 +62,13 @@ table {
     flex-basis: 20%;
     background-image: url("usman-omar-ho7e8JYEo3w-unsplash.jpg");
     background-size: cover;
+/*    display: flex;
+    justify-content: center; */
 }
 
 #formside {
     flex-basis: 40%;
-    background-color: coral;
+    background-color: #fefbf6;
 }
 
 #creditsdiv {
@@ -84,12 +86,12 @@ table {
 
 #logo {
     font-size: 50px;
-    background-color: rgba(34, 34, 34, 0.678);
+    background-color: rgba(34, 34, 34, 0.377);
     color: white;
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     position: absolute;
     top: 10%;
-    width: inherit;
+    font-family: 'Ńorse Bold';
 }

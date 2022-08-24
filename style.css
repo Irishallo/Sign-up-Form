@@ -1,3 +1,6 @@
+/* font import */
+@import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -77,7 +80,8 @@ table {
     bottom: 5px;
     font-size: 10px;
     margin: auto;
-    width: fit-content;
+    text-align: center;
+    padding-left: 75px;
 }
 
 #creditsdiv > p > a {
@@ -85,15 +89,29 @@ table {
 }
 
 #logo {
-    font-size: 50px;
     background-color: rgba(34, 34, 34, 0.377);
     color: white;
-    /*display: flex;
-    align-items: center;
-    justify-content: center; 
-    position: absolute;
-    top: 10%;
-    font-family: 'Ńorse Bold'; */
+    position: relative;
+    top: 20%;
+    text-align: center;
+    padding: 10px 80px;
+}
+
+#logo::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#logoimg {
+    height: 80px;
+    float: left;
+}
+
+#logotxt {
+    font-size: 60px;
+    font-family: "Norse";
+    line-height: 80px;
 }
 
 #inputarea {

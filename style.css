@@ -114,6 +114,18 @@ table {
     line-height: 80px;
 }
 
+#toptext {
+    padding-left: 20px;
+    position: relative;
+    top: 150px;
+    line-height: 1.1rem;
+}
+
+form {
+    position: relative;
+    top: 220px;
+}
+
 #inputarea {
     background-color: #fff;
     

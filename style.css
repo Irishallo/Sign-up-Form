@@ -1,6 +1,7 @@
 /* font import */
 @import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
 
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,6 +53,10 @@ table {
 
 /* acual page */
 
+#body {
+    font-family: 'Raleway', sans-serif;
+}
+
 #container {
     display: flex;
     flex-wrap: nowrap;
@@ -59,6 +64,7 @@ table {
     height: 100vh;
     justify-content: center;
     background-color: rgb(34, 34, 34);
+    font-family: 'Raleway', sans-serif;
 }
 
 #imageside {
@@ -119,11 +125,21 @@ table {
     position: relative;
     top: 150px;
     line-height: 1.1rem;
+    font-weight: 700;
+    width: 500px;
 }
 
 form {
     position: relative;
     top: 220px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
 
 #inputarea {
@@ -147,7 +163,34 @@ legend {
     position: absolute;
     top: 0;
     left: 20px;
-  }
+}
+
+button {
+    background-color: #efbd83;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-collumn1 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-collumn2 {
+    display: inline-block;
+}
+
 
   
   

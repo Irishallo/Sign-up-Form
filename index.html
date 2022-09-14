@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up form Project</title>
 </head>
@@ -31,23 +34,36 @@
             <form action="">
                 <fieldset id="inputarea">
                     <legend>Let's do this</legend>
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname">
-
-                    <label for="lastname">First Name:</label>
-                    <input type="text" id="lastname" name="lastname">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="phonenumber">Phonenumber:</label>
-                    <input type="tel" id="phonenumber" name="phonenumber">
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="password2">Comfirm Password:</label>
-                    <input type="password" id="password2" name="password2">
+                    <div class="form-row">
+                        <div class="form-collumn1">
+                            <label for="firstname">First Name:</label> <br>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        <div class="form-collumn2">
+                            <label for="lastname">First Name:</label> <br>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-collumn1">
+                            <label for="email">Email:</label> <br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-collumn2">
+                            <label for="phonenumber">Phonenumber:</label> <br>
+                            <input type="tel" id="phonenumber" name="phonenumber">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-collumn1">
+                            <label for="password">Password:</label> <br>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-collumn2">
+                            <label for="password2">Comfirm Password:</label> <br>
+                            <input type="password" id="password2" name="password2">
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset id="buttonarea">
                     <button type="submit">Create Account</button>

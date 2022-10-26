@@ -7,6 +7,7 @@ let phoneNumber = document.getElementById("phonenumber");
 const submitbtn = document.getElementById("submitbtn");
 
 const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const phoneFormat = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
 
 function CheckPasswords() {
     if(password1.value == password2.value && password1.value.length != 0) {
@@ -46,8 +47,19 @@ function CheckEmail() {
     }
 }
 
+function CheckPhone() {
+    if(phoneNumber.value.match(phoneFormat)){
+        console.log("phonenumber is " + phoneNumber.value);
+        phoneNumber.classList.remove('error');
+    } else {
+        console.log("phonenumber not entered");
+        phoneNumber.classList.add('error');
+    }
+}
+
 submitbtn.addEventListener('click', () => {
     CheckPasswords();
     CheckName();
     CheckEmail();
+    CheckPhone();
 });
